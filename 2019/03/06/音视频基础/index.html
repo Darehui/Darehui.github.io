@@ -79,17 +79,19 @@
 
 
 
-<meta name="description" content="This is the new postAbout the Lottie解析数据， 渲染数据">
+<meta name="description" content="音视频基础刚开博客，就写一个FFmpeg系列的内容吧。理了理，先给自己挖个坑，大概是这么个系列：  FFmpeg学习（一）– 音视频基础 FFmpeg学习（二）– FFmpeg配置集成和基本命令 FFmpeg学习（三）– FFmpeg常用结构体&amp;amp;常用函数解析 FFmpeg学习（四）– encode images to video  这一篇先介绍总结下音视频相关的一些概念。 视频比特率比特率">
 <meta property="og:type" content="article">
 <meta property="og:title" content="New Post">
-<meta property="og:url" content="http://yoursite.com/2019/03/06/New-Post/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/03/06/音视频基础/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="This is the new postAbout the Lottie解析数据， 渲染数据">
+<meta property="og:description" content="音视频基础刚开博客，就写一个FFmpeg系列的内容吧。理了理，先给自己挖个坑，大概是这么个系列：  FFmpeg学习（一）– 音视频基础 FFmpeg学习（二）– FFmpeg配置集成和基本命令 FFmpeg学习（三）– FFmpeg常用结构体&amp;amp;常用函数解析 FFmpeg学习（四）– encode images to video  这一篇先介绍总结下音视频相关的一些概念。 视频比特率比特率">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-06T11:12:56.587Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/743a9325gy1g17c4j1c0sj20740bw0ss.jpg">
+<meta property="og:updated_time" content="2019-03-18T14:53:22.441Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="New Post">
-<meta name="twitter:description" content="This is the new postAbout the Lottie解析数据， 渲染数据">
+<meta name="twitter:description" content="音视频基础刚开博客，就写一个FFmpeg系列的内容吧。理了理，先给自己挖个坑，大概是这么个系列：  FFmpeg学习（一）– 音视频基础 FFmpeg学习（二）– FFmpeg配置集成和基本命令 FFmpeg学习（三）– FFmpeg常用结构体&amp;amp;常用函数解析 FFmpeg学习（四）– encode images to video  这一篇先介绍总结下音视频相关的一些概念。 视频比特率比特率">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/743a9325gy1g17c4j1c0sj20740bw0ss.jpg">
 
 
 
@@ -119,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/06/New-Post/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/06/音视频基础/">
 
 
 
@@ -232,7 +234,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/06/New-Post/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/06/音视频基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -299,7 +301,20 @@
       
 
       
-        <h1 id="This-is-the-new-post"><a href="#This-is-the-new-post" class="headerlink" title="This is the new post"></a>This is the new post</h1><h2 id="About-the-Lottie"><a href="#About-the-Lottie" class="headerlink" title="About the Lottie"></a>About the Lottie</h2><h3 id="解析数据，-渲染数据"><a href="#解析数据，-渲染数据" class="headerlink" title="解析数据， 渲染数据"></a>解析数据， 渲染数据</h3>
+        <h1 id="音视频基础"><a href="#音视频基础" class="headerlink" title="音视频基础"></a>音视频基础</h1><p>刚开博客，就写一个FFmpeg系列的内容吧。<br>理了理，先给自己挖个坑，大概是这么个系列：</p>
+<ul>
+<li>FFmpeg学习（一）– 音视频基础</li>
+<li>FFmpeg学习（二）– FFmpeg配置集成和基本命令</li>
+<li>FFmpeg学习（三）– FFmpeg常用结构体&amp;常用函数解析</li>
+<li>FFmpeg学习（四）– encode images to video</li>
+</ul>
+<p>这一篇先介绍总结下音视频相关的一些概念。</p>
+<h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><h3 id="比特率"><a href="#比特率" class="headerlink" title="比特率"></a>比特率</h3><p>比特率（英文：Bit rate），是指每秒传送的比特数，比特率规定使用“比特每秒”（bit/s或bps）为单位。在音视频领域，<code>比特率</code>跟<code>码率</code>是一个相同的概念。<br>简单的理解：比特率越高，传输的数据越大，编码后的文字自然就越大，还原后的音视频的音质跟画质就会越好。</p>
+<h3 id="采样率"><a href="#采样率" class="headerlink" title="采样率"></a>采样率</h3><p>采样率（也称为采样速度或者采样频率）定义了每秒从连续信号中提取并组成离散信号的采样个数，它用赫兹（Hz）来表示。采样频率的倒数叫作采样周期或采样时间，它是采样之间的时间间隔。<br>采样率跟码率之间的关系：<code>比特率 = 采样率 * 采样位数 * 声道数</code></p>
+<h3 id="帧率"><a href="#帧率" class="headerlink" title="帧率"></a>帧率</h3><p>帧率是用于测量显示帧数的量度。测量单位为“每秒显示帧数”（Frame per Second，FPS）或“赫兹”，一般来说FPS用于描述影片、电子绘图或游戏每秒播放多少帧。<br>由于人类眼睛的特殊生理结构，如果所看画面之帧率高于每秒约10至12帧的时候，就会认为是连贯的，此现象称之为视觉暂留。</p>
+<h2 id="视频播放器的原理"><a href="#视频播放器的原理" class="headerlink" title="视频播放器的原理"></a>视频播放器的原理</h2><p>在这里借用下雷神的博客的图片<br><img src="https://ws1.sinaimg.cn/large/743a9325gy1g17c4j1c0sj20740bw0ss.jpg" alt></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/leixiaohua1020/article/details/18893769" target="_blank" rel="noopener">雷神的博客</a></p>
+
       
     </div>
     
@@ -445,7 +460,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#This-is-the-new-post"><span class="nav-number">1.</span> <span class="nav-text">This is the new post</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#About-the-Lottie"><span class="nav-number">1.1.</span> <span class="nav-text">About the Lottie</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解析数据，-渲染数据"><span class="nav-number">1.1.1.</span> <span class="nav-text">解析数据， 渲染数据</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#音视频基础"><span class="nav-number">1.</span> <span class="nav-text">音视频基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#视频"><span class="nav-number">1.1.</span> <span class="nav-text">视频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#比特率"><span class="nav-number">1.1.1.</span> <span class="nav-text">比特率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#采样率"><span class="nav-number">1.1.2.</span> <span class="nav-text">采样率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#帧率"><span class="nav-number">1.1.3.</span> <span class="nav-text">帧率</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视频播放器的原理"><span class="nav-number">1.2.</span> <span class="nav-text">视频播放器的原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">1.3.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
             
 
           </div>
